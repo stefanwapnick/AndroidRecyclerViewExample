@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/activity_details_teamNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"
+        android:text="Team Griffins"/>
+
+    <TextView
+        android:id="@+id/activity_details_upVotesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorUpVote"
+        android:textSize="20sp"
+        android:layout_below="@id/activity_details_teamNameText"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:text="10 up-votes"/>
+
+    <ImageView
+        android:id="@+id/activity_details_upVotesImage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/upvote"
+        android:layout_marginEnd="4dp"
+        android:layout_alignTop="@id/activity_details_upVotesText"
+        android:layout_alignBottom="@id/activity_details_upVotesText"
+        android:layout_toStartOf="@id/activity_details_upVotesText"/>
+
+    <TextView
+        android:id="@+id/activity_details_downVotesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorDownVote"
+        android:textSize="20sp"
+        android:layout_below="@id/activity_details_upVotesText"
+        android:layout_centerInParent="true"
+        android:text="0 down-votes"/>
+
+    <ImageView
+        android:id="@+id/activity_details_downVotesImage"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/downvote"
+        android:layout_marginEnd="4dp"
+        android:layout_alignTop="@id/activity_details_downVotesText"
+        android:layout_alignBottom="@id/activity_details_downVotesText"
+        android:layout_toStartOf="@id/activity_details_downVotesText"/>
+
+</RelativeLayout>
